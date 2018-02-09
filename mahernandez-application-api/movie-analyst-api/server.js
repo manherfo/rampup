@@ -3,8 +3,7 @@ var express = require('express');
 var app = express();
 var mysql = require("mysql");
 var connection = mysql.createConnection({
-  host     : process.env.DB_HOST || 'mahernandez-database-instance.cm6hb8mfglop.us-east-1.rds.amazonaws.com
-',
+  host     : process.env.DB_HOST || 'mahernandez-database-instance.cm6hb8mfglop.us-east-1.rds.amazonaws.com',
   user     : process.env.DB_USER || 'moviesbackend',
   password : process.env.DB_PASS || 'moviesbackend',
   database : process.env.DB_NAME || 'mydb'
